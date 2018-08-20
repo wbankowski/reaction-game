@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reaction Game</title>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="light light0"></div>
+        <div class="light light1"></div>
+        <div class="light light2"></div>
+        <div class="light light3"></div>
+        <div class="light light4"></div>
+        <div class="light light5"></div>
+        <div class="light light6"></div>
+        <div class="light light7"></div>
+        <div class="light light8"></div>
+        <div class="light light9"></div>
+        <div class="light light10"></div>
+        <div class="light light11"></div>
+        <div class="light light12"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+<style>
+    .grid {
+        display: grid;
+        width: 100vw;
+        /* height: 400px; */
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        background-color: black;
+    }
+
+    .light {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        border-radius: 50%;
+        margin: 25px;
+    }
+
+    .light0 {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    .light1 {
+        grid-column: 5;
+        grid-row: 5;
+    }
+
+    .light2 {
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+    .light3 {
+        grid-column: 4;
+        grid-row: 4;
+    }
+
+    .light4 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .light5 {
+        grid-column: 5;
+        grid-row: 3;
+    }
+
+    .light6 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .light7 {
+        grid-column: 4;
+        grid-row: 2;
+    }
+
+    .light8 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .light9 {
+        grid-column: 5;
+        grid-row: 1;
+    }
+
+    .light10 {
+        grid-column: 3;
+        grid-row: 3;
+    }
+
+    .light11 {
+        grid-column: 3;
+        grid-row: 5;
+    }
+
+    .light12 {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .green {
+        background-color: green;
+    }
+</style>
+
+</html>
