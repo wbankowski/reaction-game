@@ -9,40 +9,88 @@
 </head>
 
 <body>
-    <div class="grid">
-        <div class="light light0"></div>
-        <div class="light light1"></div>
-        <div class="light light2"></div>
-        <div class="light light3"></div>
-        <div class="light light4"></div>
-        <div class="light light5"></div>
-        <div class="light light6"></div>
-        <div class="light light7"></div>
-        <div class="light light8"></div>
-        <div class="light light9"></div>
-        <div class="light light10"></div>
-        <div class="light light11"></div>
-        <div class="light light12"></div>
+    <div class="container">
+        <div class="buttons">
+            <div class="button">Start Game</div>
+        </div>
+        <div class="display">
+            <h1 class="display-average"></h1>
+            <h1 class="display-amount"></h1>
+        </div>
+        <div class="grid">
+            <div class="light light0">🍏</div>
+            <div class="light light1">🍎</div>
+            <div class="light light2">🍐</div>
+            <div class="light light3">🍊</div>
+            <div class="light light4">🍋</div>
+            <div class="light light5">🍉</div>
+            <div class="light light6">🍇</div>
+            <div class="light light7">🍓</div>
+            <div class="light light8">🍒</div>
+            <div class="light light9">🍑</div>
+            <div class="light light10">🍍</div>
+            <div class="light light11">🥥</div>
+            <div class="light light12">🥝</div>
+        </div>
     </div>
     <script src="main.js"></script>
 </body>
 
 <style>
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .buttons {
+        display: flex;
+        padding: 20px 0;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .button {
+        text-align: center;
+        width: 120px;
+        height: 40px;
+        vertical-align: middle;
+        line-height: 40px;
+        margin: 20px 0 0 0;
+        background-color: black;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .container {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .display {
+        /* flex: 1; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-weight: 100;
+        font-size: 0.6em;
+        margin: 0;
+        color: black;
+    }
+
     .grid {
         display: grid;
-        width: 100vw;
-        /* height: 400px; */
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        background-color: black;
     }
 
     .light {
-        width: 100px;
-        height: 100px;
-        background-color: black;
-        border-radius: 50%;
-        margin: 25px;
+        font-size: 5em;
+        text-align: center;
+        visibility: hidden;
+        cursor: pointer;
     }
 
     .light0 {
@@ -111,7 +159,7 @@
     }
 
     .green {
-        background-color: green;
+        visibility: visible;
     }
 </style>
 
