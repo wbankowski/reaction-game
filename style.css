@@ -33,7 +33,7 @@ a.button {
 
 .app-wrap {
   /* width: 100%; */
-  height: 100vh;
+  height: 100%;
   /* margin: 5vh auto 5vh auto;
   border: 10px solid rgba(0, 0, 0, 0.8);
   border-bottom-width: 70px;
@@ -145,7 +145,7 @@ a.button {
 .light {
   font-size: 15.4vw;
   text-align: center;
-  /* visibility: hidden; */
+  visibility: hidden;
   cursor: pointer;
 }
 
