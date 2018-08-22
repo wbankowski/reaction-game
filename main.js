@@ -1,7 +1,7 @@
 const lights = document.querySelectorAll(".light");
 const timerDisplay = document.querySelector(".display-average");
 const amountDisplay = document.querySelector(".display-amount");
-const button = document.querySelector(".button");
+const start = document.querySelector(".start");
 
 let lastLight;
 let activeLight;
@@ -10,7 +10,7 @@ let endTime;
 let countdown;
 let reactionTime = [];
 
-button.addEventListener("click", startGame);
+start.addEventListener("click", startGame);
 // window.addEventListener("onload", startGame());
 
 function startGame() {
@@ -22,7 +22,11 @@ function startGame() {
   onLight();
   addListener();
   startTimer();
-  button.style.visibility = "hidden";
+  start.style.pointerEvents = "none";
+  start.style.opacity = "0.8";
+  amountDisplay.textContent = `0 pcs`;
+  timerDisplay.textContent = `0 ms`;
+
   // activeLight.classList.remove("green");
 }
 
@@ -70,12 +74,13 @@ function displayTimeLeft(seconds) {
       }
     });
     if (remainderSeconds == 0) {
-      timerDisplay.textContent = `Your average reaction time:
+      timerDisplay.textContent = `Avg:
       ${Math.round(avg)} ms`;
-      amountDisplay.textContent = `Collected: ${reactionTime.length} fruits`;
+      amountDisplay.textContent = `${reactionTime.length} pcs`;
       activeLight.classList.remove("green");
       activeLight.removeEventListener("click", removeClass);
-      button.style.visibility = "visible";
+      start.style.pointerEvents = "auto";
+      start.style.opacity = "1";
     }
   }
   document.title = remainderSeconds == 0 ? "End game" : display;

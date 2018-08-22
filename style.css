@@ -1,0 +1,225 @@
+/* CSS Setup */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a.button {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+}
+
+/* .app-wrap {
+  width: 100%;
+  height: 50vh;
+  margin: 5vh auto 5vh auto;
+  border: 10px solid rgba(0, 0, 0, 0.8);
+  border-bottom-width: 70px;
+  border-radius: 10px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+} */
+
+.content {
+  display: grid;
+  padding: 20px;
+  background: white;
+  box-shadow: inset 0 5px 0 rgba(0, 0, 0, 0.1);
+  line-height: 1.52;
+}
+
+.icon-bar a {
+  text-align: center;
+  font-size: 3rem;
+  padding: 1.5rem;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  background: #7351ef;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.icon-bar a:first-child {
+  border-left: 0;
+}
+
+.icon-bar a:first-child,
+.icon-bar a:hover {
+  border-bottom: 5px solid rgba(0, 0, 0, 0.1);
+}
+
+.icon-bar {
+  border-top: 1px solid #e6e6e6;
+}
+
+.icon-bar i {
+  display: block;
+  font-size: 4.5rem;
+  color: white;
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.app-header {
+  background: #7351ef;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.app-header a {
+  text-align: center;
+  font-size: 3rem;
+  padding: 1.5rem;
+  background: #7351ef;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.app-header i {
+  display: block;
+  font-size: 4rem;
+  color: white;
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+/* Overall Layout */
+
+.app-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-wrap > * {
+  flex: auto;
+}
+
+/* Header */
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Content */
+
+.content {
+  /* overflow-y: scroll; */
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Grid */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.light {
+  font-size: 18.8rem;
+  text-align: center;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.light0 {
+  grid-column: 1;
+  grid-row: 5;
+}
+
+.light1 {
+  grid-column: 5;
+  grid-row: 5;
+}
+
+.light2 {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.light3 {
+  grid-column: 4;
+  grid-row: 4;
+}
+
+.light4 {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.light5 {
+  grid-column: 5;
+  grid-row: 3;
+}
+
+.light6 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.light7 {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.light8 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.light9 {
+  grid-column: 5;
+  grid-row: 1;
+}
+
+.light10 {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.light11 {
+  grid-column: 3;
+  grid-row: 5;
+}
+
+.light12 {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.green {
+  visibility: visible;
+}
+
+/* Icon Bar */
+
+.icon-bar {
+  display: flex;
+}
+
+.icon-bar a {
+  flex: 1;
+}

@@ -3,164 +3,69 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Reaction Game</title>
+    <title>Reaction Time Machine</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="buttons">
-            <div class="button">Start Game</div>
+
+    <div class="app-wrap">
+
+        <header class="app-header">
+            <a href="#" class="button">
+                <i class="fas fa-stopwatch"></i>
+                <span class="display-average">0 ms</span>
+            </a>
+
+            <h1>Reaction Time Machine</h1>
+
+            <a href="#" class="button">
+                <i class="fas fa-apple-alt"></i>
+                <span class="display-amount">0 pcs</span>
+            </a>
+        </header>
+
+        <div class="content">
+            <div class="grid">
+                <div class="light light0">🍏</div>
+                <div class="light light1">🍎</div>
+                <div class="light light2">🍐</div>
+                <div class="light light3">🍊</div>
+                <div class="light light4">🍋</div>
+                <div class="light light5">🍉</div>
+                <div class="light light6">🍇</div>
+                <div class="light light7">🍓</div>
+                <div class="light light8">🍒</div>
+                <div class="light light9">🍑</div>
+                <div class="light light10">🍍</div>
+                <div class="light light11">🥥</div>
+                <div class="light light12">🥝</div>
+            </div>
         </div>
-        <div class="display">
-            <h1 class="display-average"></h1>
-            <h1 class="display-amount"></h1>
+
+        <div class="icon-bar">
+            <a href="#" class="start">
+                <i class="far fa-play-circle"></i>
+                Start
+            </a>
+            <a href="#">
+                <i class="far fa-stop-circle"></i>
+                Stop
+            </a>
+            <a href="#">
+                <i class="fas fa-chart-line"></i>
+                Results
+            </a>
+            <a href="#">
+                <i class="fa fa-user"></i>
+                Me
+            </a>
         </div>
-        <div class="grid">
-            <div class="light light0">🍏</div>
-            <div class="light light1">🍎</div>
-            <div class="light light2">🍐</div>
-            <div class="light light3">🍊</div>
-            <div class="light light4">🍋</div>
-            <div class="light light5">🍉</div>
-            <div class="light light6">🍇</div>
-            <div class="light light7">🍓</div>
-            <div class="light light8">🍒</div>
-            <div class="light light9">🍑</div>
-            <div class="light light10">🍍</div>
-            <div class="light light11">🥥</div>
-            <div class="light light12">🥝</div>
-        </div>
+
     </div>
     <script src="main.js"></script>
 </body>
-
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    .buttons {
-        display: flex;
-        padding: 20px 0;
-        align-content: center;
-        justify-content: center;
-    }
-
-    .button {
-        text-align: center;
-        width: 120px;
-        height: 40px;
-        vertical-align: middle;
-        line-height: 40px;
-        margin: 20px 0 0 0;
-        background-color: black;
-        border-radius: 10px;
-        color: white;
-        cursor: pointer;
-    }
-
-    .container {
-        width: 100vw;
-        height: 100vh;
-    }
-
-    .display {
-        /* flex: 1; */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        font-weight: 100;
-        font-size: 0.6em;
-        margin: 0;
-        color: black;
-    }
-
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    }
-
-    .light {
-        font-size: 5em;
-        text-align: center;
-        visibility: hidden;
-        cursor: pointer;
-    }
-
-    .light0 {
-        grid-column: 1;
-        grid-row: 5;
-    }
-
-    .light1 {
-        grid-column: 5;
-        grid-row: 5;
-    }
-
-    .light2 {
-        grid-column: 2;
-        grid-row: 4;
-    }
-
-    .light3 {
-        grid-column: 4;
-        grid-row: 4;
-    }
-
-    .light4 {
-        grid-column: 1;
-        grid-row: 3;
-    }
-
-    .light5 {
-        grid-column: 5;
-        grid-row: 3;
-    }
-
-    .light6 {
-        grid-column: 2;
-        grid-row: 2;
-    }
-
-    .light7 {
-        grid-column: 4;
-        grid-row: 2;
-    }
-
-    .light8 {
-        grid-column: 1;
-        grid-row: 1;
-    }
-
-    .light9 {
-        grid-column: 5;
-        grid-row: 1;
-    }
-
-    .light10 {
-        grid-column: 3;
-        grid-row: 3;
-    }
-
-    .light11 {
-        grid-column: 3;
-        grid-row: 5;
-    }
-
-    .light12 {
-        grid-column: 3;
-        grid-row: 1;
-    }
-
-    .green {
-        visibility: visible;
-    }
-</style>
 
 </html>
