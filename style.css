@@ -139,9 +139,9 @@ a.button {
 }
 
 .light {
-  font-size: 18.8rem;
+  font-size: 17.8rem;
   text-align: center;
-  visibility: hidden;
+  /* visibility: hidden; */
   cursor: pointer;
 }
 
