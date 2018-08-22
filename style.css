@@ -43,7 +43,7 @@ a.button {
 
 .content {
   display: grid;
-  padding: 20px;
+  /* padding: 20px; */
   background: white;
   box-shadow: inset 0 5px 0 rgba(0, 0, 0, 0.1);
   line-height: 25vw;
@@ -84,7 +84,7 @@ a.button {
   background: #7351ef;
   color: rgba(0, 0, 0, 0.5);
   /* padding: 1rem; */
-  font-size: 2.8vw;
+  font-size: 2.5vw;
 }
 
 .app-header a {
@@ -145,7 +145,7 @@ a.button {
 .light {
   font-size: 15.4vw;
   text-align: center;
-  visibility: hidden;
+  /* visibility: hidden; */
   cursor: pointer;
 }
 

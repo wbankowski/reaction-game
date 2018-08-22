@@ -11,7 +11,6 @@ let countdown;
 let reactionTime = [];
 
 start.addEventListener("click", startGame);
-// window.addEventListener("onload", startGame());
 
 function startGame() {
   lastLight = "";
@@ -74,8 +73,7 @@ function displayTimeLeft(seconds) {
       }
     });
     if (remainderSeconds == 0) {
-      timerDisplay.textContent = `Avg:
-      ${Math.round(avg)} ms`;
+      timerDisplay.textContent = `${Math.round(avg)} ms`;
       amountDisplay.textContent = `${reactionTime.length} pcs`;
       activeLight.classList.remove("green");
       activeLight.removeEventListener("click", removeClass);
