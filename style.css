@@ -145,7 +145,7 @@ a.button {
 .light {
   font-size: 15.4vw;
   text-align: center;
-  /* visibility: hidden; */
+  visibility: hidden;
   cursor: pointer;
 }
 
